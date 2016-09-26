@@ -184,8 +184,8 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/Base
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/UnionServiceInstanceEntity.html#getGatewayDatas--">getGatewayDatas</a></span>()</code>
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/GatewayData.html" title="class in org.cloudfoundry.client.v2.serviceinstances">GatewayData</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/UnionServiceInstanceEntity.html#getGatewayData--">getGatewayData</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
@@ -270,7 +270,7 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/Base
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/UnionServiceInstanceEntity.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>dashboardUrl</code>, <code>gatewayDatas</code>, <code>lastOperation</code>, <code>routeServiceUrl</code>, <code>serviceKeysUrl</code>, <code>servicePlanId</code>, <code>servicePlanUrl</code>, <code>syslogDrainUrl</code>, <code>tags</code>, <code>credentials</code>, <code>name</code>, <code>routesUrl</code>, <code>serviceBindingsUrl</code>, <code>spaceId</code>, <code>spaceUrl</code>, <code>type</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>dashboardUrl</code>, <code>gatewayData</code>, <code>lastOperation</code>, <code>routeServiceUrl</code>, <code>serviceKeysUrl</code>, <code>servicePlanId</code>, <code>servicePlanUrl</code>, <code>syslogDrainUrl</code>, <code>tags</code>, <code>credentials</code>, <code>name</code>, <code>routesUrl</code>, <code>serviceBindingsUrl</code>, <code>spaceId</code>, <code>spaceUrl</code>, <code>type</code>.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
@@ -311,14 +311,14 @@ extends <a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/Base
 <div class="block">The dashboard url</div>
 </li>
 </ul>
-<a name="getGatewayDatas--">
+<a name="getGatewayData--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getGatewayDatas</h4>
+<h4>getGatewayData</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getGatewayDatas()</pre>
+public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/GatewayData.html" title="class in org.cloudfoundry.client.v2.serviceinstances">GatewayData</a>&nbsp;getGatewayData()</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">The gateway data</div>
 </li>
@@ -514,7 +514,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>dashboardUrl</code>, <code>gatewayDatas</code>, <code>lastOperation</code>, <code>routeServiceUrl</code>, <code>serviceKeysUrl</code>, <code>servicePlanId</code>, <code>servicePlanUrl</code>, <code>syslogDrainUrl</code>, <code>tags</code>, <code>credentials</code>, <code>name</code>, <code>routesUrl</code>, <code>serviceBindingsUrl</code>, <code>spaceId</code>, <code>spaceUrl</code>, <code>type</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>dashboardUrl</code>, <code>gatewayData</code>, <code>lastOperation</code>, <code>routeServiceUrl</code>, <code>serviceKeysUrl</code>, <code>servicePlanId</code>, <code>servicePlanUrl</code>, <code>syslogDrainUrl</code>, <code>tags</code>, <code>credentials</code>, <code>name</code>, <code>routesUrl</code>, <code>serviceBindingsUrl</code>, <code>spaceId</code>, <code>spaceUrl</code>, <code>type</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
