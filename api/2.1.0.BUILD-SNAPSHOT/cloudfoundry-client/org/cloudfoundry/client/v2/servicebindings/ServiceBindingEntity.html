@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":42,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -221,12 +221,18 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebindings/ServiceBindingEntity.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>applicationUrl</code>, <code>bindingOptions</code>, <code>credentials</code>, <code>gatewayData</code>, <code>gatewayName</code>, <code>serviceInstanceId</code>, <code>serviceInstanceUrl</code>, <code>syslogDrainUrl</code>.</div>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/servicebindings/VolumeMounts.html" title="class in org.cloudfoundry.client.v2.servicebindings">VolumeMounts</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebindings/ServiceBindingEntity.html#getVolumeMounts--">getVolumeMounts</a></span>()</code>
+<div class="block">The volume mounts</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebindings/ServiceBindingEntity.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>applicationUrl</code>, <code>bindingOptions</code>, <code>credentials</code>, <code>gatewayData</code>, <code>gatewayName</code>, <code>serviceInstanceId</code>, <code>serviceInstanceUrl</code>, <code>syslogDrainUrl</code>, <code>volumeMounts</code>.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/servicebindings/ServiceBindingEntity.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>ServiceBindingEntity</code> with attribute values.</div>
@@ -346,6 +352,16 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/
 <div class="block">The syslog drain url</div>
 </li>
 </ul>
+<a name="getVolumeMounts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVolumeMounts</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/cloudfoundry/client/v2/servicebindings/VolumeMounts.html" title="class in org.cloudfoundry.client.v2.servicebindings">VolumeMounts</a>&gt;&nbsp;getVolumeMounts()</pre>
+<div class="block">The volume mounts</div>
+</li>
+</ul>
 <a name="equals-java.lang.Object-">
 <!--   -->
 </a>
@@ -369,7 +385,7 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/serviceinstances/
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>applicationUrl</code>, <code>bindingOptions</code>, <code>credentials</code>, <code>gatewayData</code>, <code>gatewayName</code>, <code>serviceInstanceId</code>, <code>serviceInstanceUrl</code>, <code>syslogDrainUrl</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>applicationUrl</code>, <code>bindingOptions</code>, <code>credentials</code>, <code>gatewayData</code>, <code>gatewayName</code>, <code>serviceInstanceId</code>, <code>serviceInstanceUrl</code>, <code>syslogDrainUrl</code>, <code>volumeMounts</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

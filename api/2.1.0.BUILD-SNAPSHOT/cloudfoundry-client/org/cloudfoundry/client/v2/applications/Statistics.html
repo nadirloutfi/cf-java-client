@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -197,36 +197,42 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/NetInfo.html" title="class in org.cloudfoundry.client.v2.applications">NetInfo</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/Statistics.html#getNetInfo--">getNetInfo</a></span>()</code>
+<div class="block">The net info</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/Statistics.html#getPort--">getPort</a></span>()</code>
 <div class="block">The application port</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/Statistics.html#getUptime--">getUptime</a></span>()</code>
 <div class="block">The application uptime</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/Statistics.html#getUris--">getUris</a></span>()</code>
 <div class="block">The application uris</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/Usage.html" title="class in org.cloudfoundry.client.v2.applications">Usage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/Statistics.html#getUsage--">getUsage</a></span>()</code>
 <div class="block">The application usage</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/Statistics.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>diskQuota</code>, <code>fdsQuota</code>, <code>host</code>, <code>memoryQuota</code>, <code>name</code>, <code>port</code>, <code>uptime</code>, <code>uris</code>, <code>usage</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>diskQuota</code>, <code>fdsQuota</code>, <code>host</code>, <code>memoryQuota</code>, <code>name</code>, <code>netInfo</code>, <code>port</code>, <code>uptime</code>, <code>uris</code>, <code>usage</code>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/Statistics.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>Statistics</code> with attribute values.</div>
@@ -304,6 +310,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The application name</div>
 </li>
 </ul>
+<a name="getNetInfo--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNetInfo</h4>
+<pre>public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/NetInfo.html" title="class in org.cloudfoundry.client.v2.applications">NetInfo</a>&nbsp;getNetInfo()</pre>
+<div class="block">The net info</div>
+</li>
+</ul>
 <a name="getPort--">
 <!--   -->
 </a>
@@ -367,7 +383,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>diskQuota</code>, <code>fdsQuota</code>, <code>host</code>, <code>memoryQuota</code>, <code>name</code>, <code>port</code>, <code>uptime</code>, <code>uris</code>, <code>usage</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>diskQuota</code>, <code>fdsQuota</code>, <code>host</code>, <code>memoryQuota</code>, <code>name</code>, <code>netInfo</code>, <code>port</code>, <code>uptime</code>, <code>uris</code>, <code>usage</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
