@@ -139,7 +139,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#addAllProblemHandlers-java.lang.Iterable-">addAllProblemHandlers</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>&gt;&nbsp;elements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#addAllProblemHandlers-java.lang.Iterable-">addAllProblemHandlers</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends com.fasterxml.jackson.databind.deser.DeserializationProblemHandler&gt;&nbsp;elements)</code>
 <div class="block">Adds elements to <code>problemHandlers</code> list.</div>
 </td>
 </tr>
@@ -199,19 +199,19 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#problemHandler-org.cloudfoundry.util.test.FailingDeserializationProblemHandler...-">problemHandler</a></span>(<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>...&nbsp;elements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#problemHandler-com.fasterxml.jackson.databind.deser.DeserializationProblemHandler...-">problemHandler</a></span>(com.fasterxml.jackson.databind.deser.DeserializationProblemHandler...&nbsp;elements)</code>
 <div class="block">Adds elements to <code>problemHandlers</code> list.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#problemHandler-org.cloudfoundry.util.test.FailingDeserializationProblemHandler-">problemHandler</a></span>(<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>&nbsp;element)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#problemHandler-com.fasterxml.jackson.databind.deser.DeserializationProblemHandler-">problemHandler</a></span>(com.fasterxml.jackson.databind.deser.DeserializationProblemHandler&nbsp;element)</code>
 <div class="block">Adds one element to <code>problemHandlers</code> list.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#problemHandlers-java.lang.Iterable-">problemHandlers</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>&gt;&nbsp;elements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#problemHandlers-java.lang.Iterable-">problemHandlers</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends com.fasterxml.jackson.databind.deser.DeserializationProblemHandler&gt;&nbsp;elements)</code>
 <div class="block">Sets or replaces all elements for <code>problemHandlers</code> list.</div>
 </td>
 </tr>
@@ -416,13 +416,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="problemHandler-org.cloudfoundry.util.test.FailingDeserializationProblemHandler-">
+<a name="problemHandler-com.fasterxml.jackson.databind.deser.DeserializationProblemHandler-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>problemHandler</h4>
-<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;problemHandler(<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>&nbsp;element)</pre>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;problemHandler(com.fasterxml.jackson.databind.deser.DeserializationProblemHandler&nbsp;element)</pre>
 <div class="block">Adds one element to <code>problemHandlers</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -432,13 +432,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="problemHandler-org.cloudfoundry.util.test.FailingDeserializationProblemHandler...-">
+<a name="problemHandler-com.fasterxml.jackson.databind.deser.DeserializationProblemHandler...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>problemHandler</h4>
-<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;problemHandler(<a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>...&nbsp;elements)</pre>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;problemHandler(com.fasterxml.jackson.databind.deser.DeserializationProblemHandler...&nbsp;elements)</pre>
 <div class="block">Adds elements to <code>problemHandlers</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -454,7 +454,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>problemHandlers</h4>
-<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;problemHandlers(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>&gt;&nbsp;elements)</pre>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;problemHandlers(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends com.fasterxml.jackson.databind.deser.DeserializationProblemHandler&gt;&nbsp;elements)</pre>
 <div class="block">Sets or replaces all elements for <code>problemHandlers</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -470,7 +470,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>addAllProblemHandlers</h4>
-<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;addAllProblemHandlers(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-util/apidocs/org/cloudfoundry/util/test/FailingDeserializationProblemHandler.html?is-external=true" title="class or interface in org.cloudfoundry.util.test">FailingDeserializationProblemHandler</a>&gt;&nbsp;elements)</pre>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a>&nbsp;addAllProblemHandlers(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends com.fasterxml.jackson.databind.deser.DeserializationProblemHandler&gt;&nbsp;elements)</pre>
 <div class="block">Adds elements to <code>problemHandlers</code> list.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
