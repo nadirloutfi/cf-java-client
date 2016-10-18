@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,24 +167,30 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/Links.html#getHomeRedirect--">getHomeRedirect</a></span>()</code>
+<div class="block">The URL redirect</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/identityzones/LogoutLink.html" title="class in org.cloudfoundry.uaa.identityzones">LogoutLink</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/Links.html#getLogout--">getLogout</a></span>()</code>
 <div class="block">The logout link</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/uaa/identityzones/SelfServiceLink.html" title="class in org.cloudfoundry.uaa.identityzones">SelfServiceLink</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/Links.html#getSelfService--">getSelfService</a></span>()</code>
 <div class="block">The self service link</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/Links.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>logout</code>, <code>selfService</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>homeRedirect</code>, <code>logout</code>, <code>selfService</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/identityzones/Links.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>Links</code> with attribute values.</div>
@@ -212,6 +218,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getHomeRedirect--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHomeRedirect</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHomeRedirect()</pre>
+<div class="block">The URL redirect</div>
+</li>
+</ul>
 <a name="getLogout--">
 <!--   -->
 </a>
@@ -255,7 +271,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>logout</code>, <code>selfService</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>homeRedirect</code>, <code>logout</code>, <code>selfService</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
