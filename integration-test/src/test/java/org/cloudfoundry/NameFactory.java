@@ -35,6 +35,8 @@ public interface NameFactory {
 
     String HOST_PREFIX = "test-host-";
 
+    String IDENTITY_PROVIDER_PREFIX = "test-identity-provider-";
+
     String IDENTITY_ZONE_PREFIX = "test-identity-zone-";
 
     String ORGANIZATION_PREFIX = "test-organization-";
@@ -116,6 +118,15 @@ public interface NameFactory {
      */
     default String getHostName() {
         return getName(HOST_PREFIX);
+    }
+
+    /**
+     * Creates an identity provider name
+     *
+     * @return the identity provider name
+     */
+    default String getIdentityProviderName() {
+        return getName(IDENTITY_PROVIDER_PREFIX);
     }
 
     /**
