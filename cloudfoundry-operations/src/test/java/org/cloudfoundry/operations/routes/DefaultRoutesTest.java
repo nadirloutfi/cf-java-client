@@ -432,6 +432,23 @@ public final class DefaultRoutesTest {
                     .build()));
     }
 
+    private static void requestSpaceRoutesService(CloudFoundryClient cloudFoundryClient, String spaceId) {
+        when(cloudFoundryClient.spaces()
+            .listRoutes(ListSpaceRoutesRequest.builder()
+                .page(1)
+                .spaceId(spaceId)
+                .build()))
+            .thenReturn(Mono
+                .just(fill(ListSpaceRoutesResponse.builder())
+                    .resource(fill(RouteResource.builder(), "route-")
+                        .entity(fill(RouteEntity.builder(), "route-entity-")
+                            .domainId("test-domain-id")
+                            .serviceInstanceId("test-service-instance-id")
+                            .build())
+                        .build())
+                    .build()));
+    }
+
     private static void requestSpaceRoutesEmpty(CloudFoundryClient cloudFoundryClient, String spaceId) {
         when(cloudFoundryClient.spaces()
             .listRoutes(ListSpaceRoutesRequest.builder()
@@ -786,7 +803,6 @@ public final class DefaultRoutesTest {
         public void setUp() throws Exception {
             requestSpaceRoutes(this.cloudFoundryClient, TEST_SPACE_ID);
             requestApplications(this.cloudFoundryClient, "test-route-id");
-            requestDeleteRoute(this.cloudFoundryClient, "test-route-id");
         }
 
         @Override
@@ -803,7 +819,31 @@ public final class DefaultRoutesTest {
 
     }
 
-    public static final class DeleteOrphanedRoutesNoAssociatedApplications extends AbstractOperationsApiTest<Void> {
+    public static final class DeleteOrphanedRoutesAssociatedService extends AbstractOperationsApiTest<Void> {
+
+        private final DefaultRoutes routes = new DefaultRoutes(Mono.just(this.cloudFoundryClient), Mono.just(TEST_ORGANIZATION_ID), Mono.just(TEST_SPACE_ID));
+
+        @Before
+        public void setUp() throws Exception {
+            requestSpaceRoutesService(this.cloudFoundryClient, TEST_SPACE_ID);
+//            requestApplications(this.cloudFoundryClient, "test-route-id");
+        }
+
+        @Override
+        protected ScriptedSubscriber<Void> expectations() {
+            return ScriptedSubscriber.<Void>create()
+                .expectComplete();
+        }
+
+        @Override
+        protected Mono<Void> invoke() {
+            return this.routes
+                .deleteOrphanedRoutes();
+        }
+
+    }
+
+    public static final class DeleteOrphanedRoutesNoAssociations extends AbstractOperationsApiTest<Void> {
 
         private final DefaultRoutes routes = new DefaultRoutes(Mono.just(this.cloudFoundryClient), Mono.just(TEST_ORGANIZATION_ID), Mono.just(TEST_SPACE_ID));
 
@@ -829,7 +869,7 @@ public final class DefaultRoutesTest {
 
     }
 
-    public static final class DeleteOrphanedRoutesNoAssociatedApplicationsFailure extends AbstractOperationsApiTest<Void> {
+    public static final class DeleteOrphanedRoutesNoAssociationsFailure extends AbstractOperationsApiTest<Void> {
 
         private final DefaultRoutes routes = new DefaultRoutes(Mono.just(this.cloudFoundryClient), Mono.just(TEST_ORGANIZATION_ID), Mono.just(TEST_SPACE_ID));
 
